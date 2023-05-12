@@ -5,7 +5,7 @@ import { connectRouter, routerMiddleware } from 'connected-react-router';
 import { createBrowserHistory } from 'history';
 
 // const isProduction = process.env.NODE_ENV === 'production';
-export const history = createBrowserHistory()
+export const history = createBrowserHistory({forceRefresh:true})
 const middleware = [thunk, routerMiddleware(history)];
 
 const store = configureStore({
