@@ -13,6 +13,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useDispatch } from 'react-redux'
 import { login } from '../authActions';
+import { push }  from 'connected-react-router';
 
 function Copyright(props) {
   return (

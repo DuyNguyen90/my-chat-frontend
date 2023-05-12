@@ -11,7 +11,7 @@ export function login(email, password) {
                   email: 'duycoi90@gmail.com'
                 }
                 dispatch(authSuccess(user));
-                dispatch(push('/main'));
+                dispatch(push('main'));
             } else {
                 dispatch(authFailure('Invalid username or password'));
             }
